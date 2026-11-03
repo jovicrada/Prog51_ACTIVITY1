@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int choice;
+    do { 
+    cout << "\n==== INVENTORY MENU ====\n";
+    cout << " 1. Add item\n";
+    cout << " 2. Remove item\n";
+    cout << " 3. Exit\n";
+
+    cout << "ENTER CHOICE: ";
+    cin >> choice;
+
+    switch (choice){
+        case 1:
+        string Item_name;
+        int Price, Quantity;
+        cout << "Item name: ";
+        cin >> Item_name;
+        cout << "Quantity: ";
+        cin >> Quantity;
+        cout << "Price: ";
+        cin >> Price;
+        cout << "Item added!";
+        break;
+        
+    }
+    }
+   while (choice);
+        
+    return 0;
