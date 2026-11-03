@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
+
 int main() {
  int choice;
+
     do { 
     cout << "\n==== INVENTORY MENU ====\n";
     cout << " 1. Add item\n";
@@ -22,10 +24,8 @@ int main() {
         cout << "Price: ";
         cin >> Price;
         cout << "Item added!";
-        break;
-        
-    }
-    }
-   while (choice);
+        break;  
+       }
+    }while (choice);
         
     return 0;
