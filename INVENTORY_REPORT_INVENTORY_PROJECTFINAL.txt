@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int choice;
+
+    string Item_name[100];
+    int Price[100], Quantity[100];
+    int count = 0;
+    int found;
+
+    do {
+
+        cout << "\n===== INVENTORY MENU =====\n";
+        cout << "1. Add Item\n";
+        cout << "2. View All Items\n";
+        cout << "3. Search Item\n";
+        cout << "4. Update Item\n";
+        cout << "5. Delete Item\n";
+        cout << "6. Inventory Report\n";
+        cout << "7. Exit\n";
+
+        cout << "\nENTER CHOICE: ";
+        cin >> choice;
+
+        switch (choice) {
+
+             case 6: {
+                int Total_Quantity = 0;
+                int Total_Value = 0;
+
+                for (int i = 0; i < count; i++) {
+
+                    Total_Quantity += Quantity[i];
+                    Total_Value += Quantity[i] * Price[i];
+                }
+
+                cout << "\n===== INVENTORY REPORT =====";
+                cout << "\nTotal Items: " << count;
+                cout << "\nTotal Quantity: " << Total_Quantity;
+                cout << "\nTotal Inventory Value: " << Total_Value;
+
+                break;
+            }
+        }
+
+       
+    }while (choice != 7);
+
+    return 0;
+}
