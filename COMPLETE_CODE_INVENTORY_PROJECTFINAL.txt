@@ -42,7 +42,7 @@ int main() {
                 break;
             }
 
-            // VIEW ALL ITEMS
+            
             case 2: {
                 for (int i = 0; i < count; i++) {
 
@@ -58,7 +58,7 @@ int main() {
                 break;
             }
 
-            // SEARCH ITEM
+            
             case 3: {
                 string search;
 
@@ -87,7 +87,7 @@ int main() {
                 break;
             }
 
-            // UPDATE ITEM
+            
             case 4: {
                 string search;
 
@@ -120,7 +120,7 @@ int main() {
                 break;
             }
 
-            // DELETE ITEM
+            
             case 5: {
                 string search;
 
@@ -156,7 +156,7 @@ int main() {
                 break;
             }
 
-            // INVENTORY REPORT
+            
             case 6: {
                 int Total_Quantity = 0;
                 int Total_Value = 0;
@@ -175,7 +175,7 @@ int main() {
                 break;
             }
 
-            // EXIT
+            
             case 7: {
                 cout << "Exiting Inventory System...";
                 break;
